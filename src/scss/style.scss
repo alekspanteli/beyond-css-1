@@ -4,7 +4,7 @@ $color-neutral-900: #1f3049;
 $color-primary-400: #0066ff;
 
 // font-families
-$ff-sans: 'Open Sans', sans-serif;
+$ff-sans: "Open Sans", sans-serif;
 
 // font-sizes
 $fs-900: 3.75rem; // 60px
@@ -54,6 +54,11 @@ body {
   margin-inline: auto;
 }
 
+.inverted {
+  background-color: $color-primary-400;
+  color: $color-neutral-100;
+}
+
 .page-title {
   color: $color-primary-400;
   font-size: $fs-900;
@@ -76,8 +81,46 @@ body {
     text-transform: uppercase;
     font-weight: $fw-700;
     color: $color-primary-400;
+    .inverted & {
+      color: $color-neutral-100;
+    }
   }
   &__feature-list {
     list-style: none;
+  }
+  &__list-item {
+    &:not(:last-child)::after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin-block: $size-20;
+      background-color: $color-neutral-900;
+      opacity: 0.2;
+    }
+  }
+  &__price {
+    font-size: $fs-800;
+    font-weight: $fw-700;
+
+    span {
+      font-weight: $fw-400;
+      font-size: $fs-600;
+    }
+  }
+}
+
+.button {
+  cursor: pointer;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: $fw-700;
+  color: $color-neutral-100;
+  background-color: $color-primary-400;
+  padding: 1em 1.5em;
+  justify-self: center;
+
+  .inverted & {
+    color: $color-primary-400;
+    background-color: $color-neutral-100;
   }
 }
