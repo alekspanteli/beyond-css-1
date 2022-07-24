@@ -130,3 +130,31 @@ body {
     background-color: rgb($color-neutral-900, 0.8);
   }
 }
+
+// .color-1 {
+//   color: red;
+// }
+
+// .color-2 {
+//   @extend .color-1;
+//   background-color: yellow;
+// }
+
+// .color-3 {
+//   @extend .color-2;
+//   opacity: 0.5;
+// }
+
+// $color-1: red;
+// $color-2: green;
+// $color-3: black;
+
+// %snippet {
+//   text-transform: uppercase;
+//   background-color: $color-1;
+//   color: $color-2;
+// }
+
+// .test {
+//   @extend %snippet;
+// }
