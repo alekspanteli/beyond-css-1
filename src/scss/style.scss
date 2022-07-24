@@ -4,7 +4,7 @@ $color-neutral-900: #1f3049;
 $color-primary-400: #0066ff;
 
 // font-families
-$ff-sans: "Open Sans", sans-serif;
+$ff-sans: 'Open Sans', sans-serif;
 
 // font-sizes
 $fs-900: 3.75rem; // 60px
@@ -64,6 +64,8 @@ body {
   border: $size-8 solid $color-primary-400;
   display: flex;
 }
+
+/* Tier */
 
 .tier {
   flex: 1;
